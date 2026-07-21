@@ -1,4 +1,4 @@
-const RAW_BASE = (import.meta as any).env?.VITE_API_URL ?? "http://localhost:8080";
+const RAW_BASE = (import.meta as any).env?.VITE_API_URL ?? "https://resolver-backend.onrender.com";
 export const API_BASE = RAW_BASE.replace(/\/$/, "");
 
 export type UserRole = "STUDENT" | "HOD" | "PRINCIPAL" | "EXECUTIVE_CHAIRMAN";
